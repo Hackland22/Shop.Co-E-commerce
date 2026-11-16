@@ -7,8 +7,7 @@
 
 body main {
   background-color: rgb(255, 255, 255);
-  margin: 7px 15px;
-  max-width: 1200px;
+  margin: 0;
 }
 
 .announcement-bar {
@@ -17,11 +16,7 @@ body main {
   color: white;
   text-align: center;
   justify-content: center;
-  padding: 5px;
   position: fixed;
-  width: 100%;
-  top: 0;
-  left: 5px;
   z-index: 1000;
   margin-left: 8px;
 }
@@ -29,7 +24,6 @@ body main {
 .announcement-bar a {
   color: white;
   font-size: 12px;
-  padding-left: 3px;
 }
 
 .announcement-bar p {
@@ -40,7 +34,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 5px;
 }
 
 nav a {
@@ -64,14 +60,26 @@ nav a {
 }
 
 .style {
-  font-size: 85px;
+  font-size: 95px;
   padding-top: 40px;
   padding-left: 30px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(240, 240, 232);
+}
+
+.hero-section img {
+  width: 60%;
+  height: auto;
 }
 
 .shop-button {
   border: none;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .group {
@@ -79,31 +87,19 @@ nav a {
   flex-direction: column;
 }
 
-.hero-section img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.hero-textsub {
-  position: absolute;
-  padding-right: 15px;
-}
-
 .hero-textsub p {
   padding-left: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-.hero-section {
-  position: relative;
-}
 
 .shop-button {
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .shop {
   border: 0px;
   border-radius: 20px;
@@ -140,12 +136,14 @@ nav a {
 
 .group-top-selling {
   display: flex;
-  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .group-brand-cloth {
   display: flex;
-  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .wrapper {
@@ -190,6 +188,7 @@ nav a {
   padding-bottom: 30px;
   padding-top: 20px;
 }
+
 .selling {
   text-align: center;
   padding-bottom: 30px;
@@ -365,6 +364,10 @@ nav a {
   margin-left: 20px;
 }
 
+.first-footer-text , .second-footer-text {
+  font-size: 15px;
+}
+
 .footer-wrap img {
   padding-right: 30px;
   align-items: center;
@@ -373,10 +376,11 @@ nav a {
 
 .footer-wrap p {
   padding-right: 100px;
+  font-size: 15px;
 }
 
 .license {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .footer-sub img {
@@ -391,11 +395,13 @@ nav a {
 .footer-sub {
   display: flex;
   align-items: center;
+  padding-left: 10px;
 }
 
 /* Desktop */
 
 @media (min-width: 1025px) {
+
   main {
     margin: 0 auto;
   }
@@ -429,12 +435,14 @@ nav a {
     font-size: 12px;
   }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 4px;
-  }
+ header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 20px;
+ }
 
   nav a {
     text-decoration: none;
@@ -470,26 +478,6 @@ nav a {
   .group {
     display: flex;
     flex-direction: column;
-  }
-
-  .hero-section img {
-    display: block;
-    height: auto;
-    width: 100%;
-  }
-
-  .hero-textsub {
-    position: absolute;
-    padding-right: 15px;
-  }
-
-  .hero-textsub p {
-    padding-left: 30px;
-    padding-bottom: 25px;
-  }
-
-  .hero-section {
-    position: relative;
   }
 
   .shop-button {
@@ -684,10 +672,11 @@ nav a {
     border: none;
     border-radius: 5px;
     border-color: rgb(92, 128, 165);
+    padding-left: 10px;
   }
 
   .sarah-quote p {
-    font-size: 12px;
+    font-size: 15px;
     padding-right: 30px;
     margin-bottom: 20px;
   }
@@ -797,9 +786,6 @@ nav a {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-  main {
-    max-width: 1200px;
-  }
 
   body main {
     background-color: rgb(255, 255, 255);
@@ -873,27 +859,6 @@ nav a {
     flex-direction: column;
   }
 
-  .hero-section img {
-    display: block;
-    height: auto;
-    width: 100%;
-  }
-
-  .hero-textsub {
-    position: absolute;
-    padding-right: 8px;
-  }
-
-  .hero-textsub p {
-    padding-left: 15px;
-    padding-bottom: 15px;
-    font-size: 12px;
-  }
-
-  .hero-section {
-    position: relative;
-  }
-
   .shop-button {
     display: flex;
     padding-left: 10px;
@@ -903,10 +868,10 @@ nav a {
 
   .shop {
     border: 0px;
-    border-radius: 10px;
+    border-radius: 17px;
     background-color: rgb(26, 16, 8);
     color: white;
-    padding: 5px 5px;
+    padding: 12px 12px;
     margin: 10px;
   }
 
@@ -917,8 +882,12 @@ nav a {
 
   .group-number h3 {
     justify-content: space-between;
-    padding-left: 15px;
-    font-size: 10px;
+    padding-left: 35px;
+    font-size: 18px;
+  }
+
+  .group-number  p {
+    font-size: 12px;
   }
 
   .brand-logo {
@@ -1055,8 +1024,8 @@ nav a {
   }
 
   .customer-wordings h1 {
-    font-size: 20px;
-    margin-right: 250px;
+    font-size: 40px;
+    margin-right: 450px;
   }
 
   .arrow {
@@ -1090,11 +1059,13 @@ nav a {
 
   .sarah-group h5 {
     padding-right: 12px;
+    font-size: 18px;
   }
 
   .quotes {
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
   }
 
   .sarah-quote {
@@ -1104,9 +1075,10 @@ nav a {
   }
 
   .sarah-quote p {
-    font-size: 8px;
+    font-size: 12px;
     padding-right: 20px;
     margin-bottom: 14px;
+    
   }
 
   .offer h1 {
@@ -1164,16 +1136,18 @@ nav a {
     padding-top: 3px;
     margin-bottom: 20px;
     margin-right: 9px;
+    font-size: 12px;
   }
 
   .company h4 {
     padding-bottom: 7px;
-    font-size: 9px;
+    font-size: 15px;
     margin-right: 8px;
   }
 
   .footer-wrap h1 {
     padding-bottom: 20px;
+    font-size: 30px;
   }
 
   .footer-wrap {
@@ -1188,6 +1162,7 @@ nav a {
 
   .footer-wrap p {
     padding-right: 70px;
+    font-size: 12px;
   }
 
   .license {
@@ -1215,11 +1190,7 @@ nav a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  main {
-    max-width: 600px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   body main {
@@ -1252,10 +1223,17 @@ nav a {
   }
 
   header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 5px;
+ }
+
+
+  header h1 {
+    font-size: 15px;
   }
 
   nav a {
@@ -1272,17 +1250,19 @@ nav a {
     padding-bottom: 3px;
     margin-bottom: 4px;
     background-color: rgb(253, 253, 253);
-    padding-right: 100px;
+    padding-right: 20px;
     padding-left: 5px;
     font-size: 10px;
   }
 
   .header img {
-    gap: 8px;
-  }
+    width: 100%;
+    height: auto;
+    }
 
   .style {
-    font-size: 40px;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-top: 20px;
     padding-left: 15px;
   }
@@ -1299,26 +1279,23 @@ nav a {
   }
 
   .hero-section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
   }
 
   .shop-button {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 10px;
-    border: none;
-    border-radius: 2px;
+    justify-content: center;
   }
 
   .shop {
     border: 0px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgb(26, 16, 8);
     color: white;
     padding: 5px 5px;
     margin: 10px;
+    padding: 12px 90px;
+    font-size: 15px;
   }
 
   .group-number {
@@ -1333,19 +1310,19 @@ nav a {
   }
 
   .brand-logo {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
     color: white;
     justify-content: space-between;
     gap: 18px;
     margin-right: 10px;
   }
 
-  .brand-logo img {
-    width: 50%;
-    height: auto;
-  }
+   .brand-logo img {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+   }
 
   .arrival {
     text-align: center;
@@ -1354,18 +1331,19 @@ nav a {
 
   .group-top-selling {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    justify-content: space-between;
-    margin-right: 50px;
-    margin-left: 85px;
+    grid-template-columns: repeat(1, 3fr);
+    align-items: center;
+    padding-top: 5px;
+    margin-right: 70px;
+    padding-left: 40px;
   }
 
   .group-brand-cloth {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    justify-content: space-between;
-    margin-right: 50px;
-    margin-left: 85px;
+    grid-template-columns: repeat(1, 3fr);
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
   }
 
   .wrapper {
@@ -1438,40 +1416,41 @@ nav a {
   .style-design {
     background-color: rgb(230, 226, 226);
     border: auto;
-    border-radius: 6px;
+    border-radius: 20px;
     margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .style-design h1 {
     text-align: center;
-    font-size: 40px;
-    padding-top: 40px;
-    padding-bottom: 48px;
+    font-size: 50px;
+    padding: 40px 20px;
   }
 
   .first-style {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
   }
 
   .second-style {
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 14px;
-    padding-bottom: 25px;
+    align-items: center;
   }
 
   .customer-wordings h1 {
-    font-size: 20px;
-    margin-right: 250px;
+    font-size: 35px;
+    margin-right: 100px;
   }
 
   .arrow {
     display: flex;
+    padding-top: 45px;
   }
 
   .customer-wordings {
@@ -1521,50 +1500,65 @@ nav a {
   }
 
   .offer h1 {
-    font-size: 35px;
+    font-size: 40px;
     color: white;
-    padding-left: 35px;
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding: 20px 10px 5px 20px;
   }
 
   .offer {
     margin-top: 14px;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     background-color: rgb(32, 8, 8);
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .offer-wrapper {
     display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 40px;
+     margin-left: 25px;
+    margin-bottom: 20px;
   }
 
   .offer-wrapper button {
-    margin-top: 10px;
     border-radius: 14px;
-    height: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 4px;
-    padding-bottom: 16px;
-    font-size: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    font-size: 12px;
+  }
+
+   .first-footer-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+
+  .second-footer-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 10px;
   }
 
   .offer-wrapper input {
     text-align: center;
-    border-radius: 14px;
+    border-radius: 15px;
     padding-top: 6px;
     padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 11px;
+    margin-top: 10px;
   }
 
   .footer {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     font-size: 10px;
     padding-top: 20px;
@@ -1579,12 +1573,13 @@ nav a {
 
   .company h4 {
     padding-bottom: 7px;
-    font-size: 9px;
+    font-size: 15px;
     margin-right: 8px;
   }
 
   .footer-wrap h1 {
     padding-bottom: 20px;
+    font-size: 35px;
   }
 
   .footer-wrap {
@@ -1598,24 +1593,32 @@ nav a {
   }
 
   .footer-wrap p {
-    padding-right: 70px;
+    padding-right: 20px;
+    font-size: 13px;
   }
 
   .license {
-    font-size: 8.5px;
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
   }
 
   .footer-sub img {
     align-items: center;
     padding-left: 9px;
+    display: flex;
   }
 
   .footer-sub p {
-    padding-right: 250px;
+    padding-right: 50px;
   }
 
-  .footer-sub {
-    display: flex;
+ .footer-sub {
     align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-sub-img {
+    display: flex;
   }
 }
